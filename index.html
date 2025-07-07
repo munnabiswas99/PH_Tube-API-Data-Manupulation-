@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ph-Tube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="w-11/12 mx-auto flex items-center justify-between py-3 border-b border-gray-200">
+        <div class="logo w-[100px]">
+          <img src="assets/Logo.png" alt="" />
+        </div>
+        <div class="search">
+          <label class="input">
+            <svg
+              class="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="grow" placeholder="Search" />
+          </label>
+        </div>
+        <div class="sort">
+          <button class="btn">Sort</button>
+        </div>
+      </nav>
+    </header>
+    <nav id="categories" class="flex py-2 justify-center gap-5"></nav>
+
+    <main>
+        <section id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Video cards will be dynamically inserted here -->
+        </section>
+        
+    </main>
+
+    <script src="scripts/video.js"></script>
+  </body>
+</html>
