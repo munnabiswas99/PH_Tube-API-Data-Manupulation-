@@ -9,11 +9,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header>
-      <nav class="w-11/12 mx-auto flex items-center justify-between py-3 border-b border-gray-200">
+      <nav
+        class="w-11/12 mx-auto flex items-center justify-between py-3 border-b border-gray-200"
+      >
         <div class="logo w-[100px]">
           <img src="assets/Logo.png" alt="" />
         </div>
@@ -35,7 +38,7 @@
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" class="grow" placeholder="Search" />
+            <input type="search" id="searchInput" class="grow" placeholder="Search" />
           </label>
         </div>
         <div class="sort">
@@ -46,10 +49,25 @@
     <nav id="categories" class="flex py-2 justify-center gap-5"></nav>
 
     <main>
-        <section id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Video cards will be dynamically inserted here -->
-        </section>
-        
+      <section
+        id="videos"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
+        <!-- Video cards will be dynamically inserted here -->
+      </section>
+
+      <button class="btn hidden" onclick="customModal.showModal()">open modal</button>
+      <dialog id="customModal" class="modal">
+        <div class="modal-box">
+          <h2 class="text-2xl font-bold mb-4">Video Details</h2>
+          <div id="videoDetails" class="space-y-4">
+            <!-- Video details will be dynamically inserted here -->
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </main>
 
     <script src="scripts/video.js"></script>
