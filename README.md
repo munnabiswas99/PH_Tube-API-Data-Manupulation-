@@ -76,7 +76,7 @@ cd ph-tube
 
 ## 👨‍💻 Author
 
-**Munna**
+**Munna Biswas**
 
 ---
 
