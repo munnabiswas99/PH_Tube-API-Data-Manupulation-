@@ -76,7 +76,7 @@ https://munnabiswas99.github.io/PH_Tube-API-Data-Manupulation-/
 
 ## 👨‍💻 Author
 
-**Munna**
+**Munna Biswas**
 
 ---
 
